@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+body {
+    font-family: 'Titillium Web',Arial,Helvetica,'Nimbus Sans L',sans-serif;
+    /* overflow: hidden; */
+}
+/* NAVBAR */
+li, a {
+    font-family: 'Titillium Web',Arial,Helvetica,'Nimbus Sans L',sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #43494d;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+    max-width: 200px;
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.nav_links li a { 
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover { 
+    color: white;
+    background-color: #43494d;
+}
+/* Bloki z usługami */
+.usługi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 50px;
+    background-image: url("obrazy/tło2.jpg");
+    background-color: #333;
+    width: 100%;
+    height: 500px;
+    background-size:cover;
+    background-position: center;
+}
+
+.usługi p {
+    background-color: gray;
+    color: white;
+    font-family: 'Titillium Web',Arial,Helvetica,'Nimbus Sans L',sans-serif;
+    font-size: 30px;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px; 
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+    
+}
+.usługi p:hover { 
+    background-color: #43494d;
+    transition: all 0.3s ease 0s;
+    cursor:pointer;
+    transform: scale(1.1);
+}
+.counters { 
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-style: solid;
+    border-color: #43494d;
+    border-left: 0px;
+    border-right: 0px;
+}
+.counter-container { 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 30px 50px;;
+    border: #43494d;
+}
+.counter { 
+    font-weight: bold;
+}
+/* sekcja - Dlaczego warto nas wybrać */
+
+.sekcja2-naglowek {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.container { 
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.sekcja2 { 
+    text-align: center;
+    margin: 30px;
+}
+.sekcja2 h3 {
+    margin: 8px;
+}
+/* karuzela opinie*/
+.opinie {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 30px;
+}
+.slide-container{
+  max-width: 1600px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card{
+  border-radius: 25px;
+  background-color: #FFF;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #43494d;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #43494d;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #43494d;
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description{
+  font-size: 14px;
+  color: #43494d;
+  text-align: center;
+}
+.button{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #707070;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover{
+  background: #43494d;
+}
+
+.swiper-navBtn{
+  color: #43494d;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #43494d;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #43494d;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #43494d;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
